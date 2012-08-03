@@ -15,6 +15,7 @@
 		2964F7DF15CAE7A60066F40E /* SCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2964F7DE15CAE7A60066F40E /* SCAppDelegate.m */; };
 		2964F7E215CAE7A60066F40E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2964F7E015CAE7A60066F40E /* MainStoryboard.storyboard */; };
 		2964F7E515CAE7A60066F40E /* SCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2964F7E415CAE7A60066F40E /* SCViewController.m */; };
+		2964F7ED15CB1C5B0066F40E /* SuperCalcModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2964F7EC15CB1C5B0066F40E /* SuperCalcModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		2964F7E115CAE7A60066F40E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		2964F7E315CAE7A60066F40E /* SCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCViewController.h; sourceTree = "<group>"; };
 		2964F7E415CAE7A60066F40E /* SCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCViewController.m; sourceTree = "<group>"; };
+		2964F7EB15CB1C5B0066F40E /* SuperCalcModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperCalcModel.h; sourceTree = "<group>"; };
+		2964F7EC15CB1C5B0066F40E /* SuperCalcModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperCalcModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 				2964F7DE15CAE7A60066F40E /* SCAppDelegate.m */,
 				2964F7E015CAE7A60066F40E /* MainStoryboard.storyboard */,
 				2964F7E315CAE7A60066F40E /* SCViewController.h */,
+				2964F7EB15CB1C5B0066F40E /* SuperCalcModel.h */,
+				2964F7EC15CB1C5B0066F40E /* SuperCalcModel.m */,
 				2964F7E415CAE7A60066F40E /* SCViewController.m */,
 				2964F7D515CAE7A60066F40E /* Supporting Files */,
 			);
@@ -165,6 +170,7 @@
 				2964F7DB15CAE7A60066F40E /* main.m in Sources */,
 				2964F7DF15CAE7A60066F40E /* SCAppDelegate.m in Sources */,
 				2964F7E515CAE7A60066F40E /* SCViewController.m in Sources */,
+				2964F7ED15CB1C5B0066F40E /* SuperCalcModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
