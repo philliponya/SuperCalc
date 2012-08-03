@@ -13,7 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *display;
 
 @property (nonatomic) BOOL typingNumber;
-
+@property (nonatomic, strong) SuperCalcModel *model;
 - (IBAction)number:(UIButton *)sender;
 - (IBAction)operatorPressed:(UIButton *)sender;
 

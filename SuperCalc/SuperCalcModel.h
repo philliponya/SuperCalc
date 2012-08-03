@@ -11,6 +11,7 @@
 @interface SuperCalcModel : NSObject
 @property (nonatomic) double waitingOperand;
 @property (nonatomic, strong) NSString *operation;
+@property double currentNumber;
 
 - (double)performOperationWithOperand: (double)newOperand;
 

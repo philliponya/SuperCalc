@@ -11,6 +11,7 @@
 @implementation SuperCalcModel
 @synthesize waitingOperand = _waitingOperand;
 @synthesize operation = _operation;
+@synthesize currentNumber = _currentNumber;
 
 - (double)performOperationWithOperand: (double)newOperand
 {
@@ -18,15 +19,26 @@
     
     
     if ([self.operation isEqualToString:@"x"])
-        NSLog(@"Mulitply!!");
+    {
+        result = self.waitingOperand * newOperand;
+    }
     else if ([self.operation isEqualToString:@"/"])
-        NSLog(@"Divide!!");
+    {
+        
+        
+    }
     else if ([self.operation isEqualToString:@"+"])
-        NSLog(@"ADD!!");
+    {
+        
+    }
     else if ([self.operation isEqualToString:@"-"])
-        NSLog(@"Subtract!!");
+    {
+        
+    }
     else if ([self.operation isEqualToString:@"="])
-        NSLog(@"Equalize!!");
+    {
+        
+    };
     
     return 0.0;
 

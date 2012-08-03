@@ -58,23 +58,23 @@
     
     if (self.typingNumber)
     {
-        if (operator isEqualToString:@"="))
+        double currentNumber = [self.display.text doubleValue];
+        if ([operator isEqualToString:@"="])
         {
-            double result = [self.model performOperationWithOperand];
-            [currentNumber ;]
+            double result = [self.model performOperationWithOperand: currentNumber];
             [self.model performOperationWithOperand: currentNumber];
+            NSLog(@"Result: %f", result);
             
         } else
         {
-            self.model.watiingOperand = currentNumber;
+            self.model.waitingOperand = currentNumber;
             self.model.operation = operator; 
         }
-        double currentNumber = [self.display.text doubleValue];
         
         self.model.waitingOperand = currentNumber;
         self.model.operation = operator;
         
-        NSLog(@"CurrentNumber %f:, currentNumber)");
+        NSLog(@"CurrentNumber %f:", currentNumber);
         
         self.typingNumber = NO;
         
@@ -86,17 +86,20 @@
      */
     
     
-//    
-//    if ([operator isEqualToString:@"x"])
-//        NSLog(@"Mulitply!!");
-//    else if ([operator isEqualToString:@"/"])
-//        NSLog(@"Divide!!");
-//    else if ([operator isEqualToString:@"+"])
-//        NSLog(@"ADD!!");
-//    else if ([operator isEqualToString:@"-"])
-//        NSLog(@"Subtract!!");
-//    else if ([operator isEqualToString:@"="])
-//        NSLog(@"Equalize!!");
+    
+    if ([operator isEqualToString:@"x"])
+        NSLog(@"Mulitply!!");
+    else if ([operator isEqualToString:@"/"])
+        NSLog(@"Divide!!");
+    else if ([operator isEqualToString:@"+"])
+        NSLog(@"ADD!!");
+    else if ([operator isEqualToString:@"-"])
+        NSLog(@"Subtract!!");
+    else if ([operator isEqualToString:@"="])
+        NSLog(@"Equalize!!");
+    
+    //double result = [self.model performOperationWithOperand: currentNumber];
+    //self.display.text =[NSString stringWithFormat: @"%f", result];
     
 }
 @end
